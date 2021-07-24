@@ -25,9 +25,9 @@ searchElement.addEventListener('input', debounce((e) => {
             if (countries.length >= 2 && countries.length <= 10) {
                 renderCountryList(countries);
             }
+             
         })
-        .catch(error => console.log(error))
-        , onReject();
+        .catch(error =>  onReject());
 
 }, DEBOUNCE_DELAY));
 function renderCountryCard(countries) {
